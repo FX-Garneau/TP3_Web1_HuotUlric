@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="utf-8" />
+      <title> </title>
+      <meta name="description" content="">
+      <!-- meta viewport : importante à inclure pour l'affichage sur les divers appareils -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/styles.css">
+   </head>
+   <body>
+      <div class="container">
+         <header>
+            <div id="top">
+               <img id="logo" src="img/delstar-logo.png">
+               <nav>
+                  <a id="nav-accueil" href="#">Accueil</a>
+                  <a id="nav-reserver" href="#">Réserver</a>
+                  <a id="nav-menu" href="#">Menu</a>
+                  <img id="icon-menu" src="img/icon-menu.png">
+               </nav>
+            </div>
+            <div id="accueil-info">
+               <h2>Bienvenue sur mon site</h2>
+               <h5>Consulter la page suivante...</h5>
+               <button>RÉSERVER</button>
+            </div>
+         </header>
+         <main id="reserver">
+            <h2>Formulaire de réservation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet nunc sed arcu mattis ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae</p>
+            <form id="reservation" method="post" action="/action_page.php">
+               <span class="field">
+                  <label for="nom">Nom</label>
+                  <input type="text" id="nom" name="nom" placeholder="Nom" required/>
+               </span>
+               <span class="field">
+                  <label for="prenom">Prénom</label>
+                  <input type="text" id="prenom" name="prenom" placeholder="Prénom" required/>
+               </span>
+               <span class="field">
+                  <label for="telephone">Téléphone</label>
+                  <img src="img/canada.png" id="canada">
+                  <p id="prefix">+1</p>
+                  <input type="tel" id="telephone" name="telephone" placeholder="(123) 456-7890" pattern="[0-9]{10}" required/>
+               </span>
+               <span class="field">
+                  <label for="nbPersonnes">Nombre de personnes</label>
+                  <input type="number" id="nbPersonnes" name="nbPersonnes" min="1" max="10" placeholder="1 - 10" required/>
+               </span>
+               <span id="date-heure">
+                  <span class="field">
+                     <label for="date">Date</label>
+                     <input type="date" id="date" name="date" required/>
+                  </span>
+                  <span class="field">
+                     <label for="heure">Heure</label>
+                     <select id="heure" name="heure" required>
+                        <option value="" disabled selected hidden>Choisir une heure...</option>
+                        <option value="1200">12:00</option>
+                        <option value="1230">12:30</option>
+                        <option value="1300">13:00</option>
+                        <option value="1330">13:30</option>
+                        <option value="1700">17:00</option>
+                        <option value="1730">17:30</option>
+                        <option value="1800">18:00</option>
+                        <option value="1830">18:30</option>
+                        <option value="1900">19:00</option>
+                        <option value="1930">19:30</option>
+                        <option value="2000">20:00</option>
+                        <option value="2030">20:30</option>
+                        <option value="2100">21:00</option>
+                     </select>
+                  </span>
+               </span>
+               <span class="field inline">
+                  <label><input type="radio" name="choixPlace" value="interieur" required>Salle à manger</label>
+                  <label><input type="radio" name="choixPlace" value="exterieur" required>Terrasse</label>
+               </span>
+               <span class="field">
+                  <label for="commentaire">Commentaire(s)</label>
+                  <textarea id="commentaire"></textarea>
+               </span>
+               <span class="field">
+                  <label for="email">Addresse courriel</label>
+                  <input type="email" id="email" name="email" placeholder="yourname@example.com" required/>
+               </span>
+               <span class="field">
+                  <label><input type="checkbox" id="infolettre" name="infolettre"/>Je souhaite m'inscrire à l'infolettre</label>
+               </span>
+               <span id="action-buttons">
+                  <input type="reset" value="RÉINITIALISER"/>
+                  <input type="submit" value="RÉSERVER"/>
+               </span>
+            </form>
+         </main>
+         <footer>
+            <div>
+               <h1>Pour nous joindre</h1>
+               <p><a href="mailto:info@delstar.com">info@delstar.com</a></p>
+               <p><a href="tel:418-335-7827">+1 (418) 335-7827</a></p>
+               <div id="socials">
+                  <img src="img/socials/logo-facebook.png">
+                  <img src="img/socials/logo-instagram.png">
+                  <img src="img/socials/logo-linkedin.png">
+               </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99370.15308103857!2d-77.09697646335972!3d38.89385915491104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC%2C%20USA!5e0!3m2!1sen!2sca!4v1683118329225!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </footer>
+      </div>
+   </body>
+</html>
